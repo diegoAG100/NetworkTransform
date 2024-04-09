@@ -41,7 +41,7 @@ public class PlayerMovement : NetworkBehaviour
 
     [Rpc(SendTo.Server)]
     void SubmitPositionRequestServerRpc(Vector3 movement){
-        if(transform.position.x>4 || transform.position.x<-4 || transform.position.z>4 || transform.position.z<-4 ){
+        if((transform.position + movement).x>4 || (transform.position + movement).x<-4 || (transform.position + movement).z>4 || (transform.position + movement).z<-4 ){
 
         }
         else{
