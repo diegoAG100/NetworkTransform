@@ -36,13 +36,17 @@ public class PlayerMovement : NetworkBehaviour
         movement.z = vertical;
 
         movement=movement.normalized*velocity*Time.fixedDeltaTime;
-
         SubmitPositionRequestServerRpc(movement);
     }
 
     [Rpc(SendTo.Server)]
     void SubmitPositionRequestServerRpc(Vector3 movement){
-        transform.position +=movement;
+        if(transform.position.x>4 || transform.position.x<-4 || transform.position.z>4 || transform.position.z<-4 ){
+
+        }
+        else{
+            transform.position +=movement;
+        }
     }
 
     private void Jump(){
