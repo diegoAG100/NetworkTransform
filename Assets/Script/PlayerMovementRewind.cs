@@ -2,7 +2,7 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerMovement : NetworkBehaviour
+public class PlayerMovementRewind : NetworkBehaviour
 {
     public float velocity = 6;
     public float jumpforce = 6;

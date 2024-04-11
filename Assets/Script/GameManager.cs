@@ -2,11 +2,13 @@ using Unity.Netcode;
 using UnityEngine;
 
 namespace Game
-{
+{   
     public class GameManager : MonoBehaviour
     {
+        private bool end = false;
         void OnGUI()
         {
+            if(end == false){
             GUILayout.BeginArea(new Rect(10, 10, 300, 300));
             if (!NetworkManager.Singleton.IsClient && !NetworkManager.Singleton.IsServer)
             {
@@ -17,9 +19,11 @@ namespace Game
                 StatusLabels();
 
                 SubmitNewPosition();
+                end=true;
             }
 
             GUILayout.EndArea();
+            }
         }
 
         static void StartButtons()
