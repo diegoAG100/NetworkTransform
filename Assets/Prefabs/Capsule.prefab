@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: -2965854659558427246}
   - component: {fileID: 6316476657613203399}
   - component: {fileID: -9038019697082664045}
-  - component: {fileID: 6356228815061494528}
-  - component: {fileID: -8683107723583841599}
+  - component: {fileID: 6300991491594364389}
+  - component: {fileID: 7925417441062633980}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -174,7 +174,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6356228815061494528
+--- !u!114 &6300991491594364389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,7 +183,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039258921899895311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a15aabf219eba14b863f96ae0d4be87, type: 3}
+  m_Script: {fileID: 11500000, guid: 966f475c6dbab1d48aa837fb643cda5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 6
+  jumpforce: 6
+--- !u!114 &7925417441062633980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039258921899895311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
@@ -205,17 +219,3 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!114 &-8683107723583841599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039258921899895311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830e6bc2c4771345b24213d6eba6f0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 6
-  jumpforce: 6
