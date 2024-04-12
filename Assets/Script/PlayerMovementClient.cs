@@ -37,12 +37,7 @@ public class PlayerMovementClient : NetworkBehaviour
 
         movement=movement.normalized*velocity*Time.fixedDeltaTime;
 
-        if((transform.position + movement).x>4 || (transform.position + movement).x<-4 || (transform.position + movement).z>4 || (transform.position + movement).z<-4 ){
-
-        }
-        else{
-            transform.position +=movement;
-        }
+        transform.position +=movement;
     }
 
 

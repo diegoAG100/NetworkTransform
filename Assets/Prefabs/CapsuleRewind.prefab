@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: -2965854659558427246}
   - component: {fileID: 6316476657613203399}
   - component: {fileID: -9038019697082664045}
-  - component: {fileID: 6300991491594364389}
-  - component: {fileID: 7925417441062633980}
+  - component: {fileID: -2589431202253026551}
+  - component: {fileID: 865148714507607992}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: CapsuleRewind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2503097819
+  GlobalObjectIdHash: 2145217837
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -174,7 +174,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6300991491594364389
+--- !u!114 &-2589431202253026551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 6
   jumpforce: 6
---- !u!114 &7925417441062633980
+--- !u!114 &865148714507607992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,12 +204,12 @@ MonoBehaviour:
   SyncPositionX: 1
   SyncPositionY: 1
   SyncPositionZ: 1
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01

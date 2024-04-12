@@ -192,7 +192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &210415358
 Transform:
   m_ObjectHideFlags: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PresetAsset: {fileID: 0}
   m_PresetReference:
-    rid: 7926797405310418944
+    rid: 7926797428624719882
   m_Scenario:
     rid: -2
   m_IsScenarioSettingsFolded: 0
@@ -232,10 +232,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 7926797405310418944
+    - rid: 7926797428624719882
       type: {class: NetworkSimulatorPreset, ns: Unity.Multiplayer.Tools.NetworkSimulator.Runtime, asm: Unity.Multiplayer.Tools.NetworkSimulator.Runtime}
       data:
-        <Name>k__BackingField: 
+        <Name>k__BackingField: None
         <Description>k__BackingField: 
         <PacketDelayMs>k__BackingField: 0
         <PacketJitterMs>k__BackingField: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1340261410}
-    PlayerPrefab: {fileID: 2039258921899895311, guid: 33a740fa3055e1a4d8380f63155cba1b, type: 3}
+    PlayerPrefab: {fileID: 2039258921899895311, guid: a55564ebdb8a9864abafc66be2e4b4be, type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 984f46fc871d355418d20a4d84a1af11, type: 2}
