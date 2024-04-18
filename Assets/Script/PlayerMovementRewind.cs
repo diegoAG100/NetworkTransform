@@ -37,22 +37,36 @@ public class PlayerMovementRewind : NetworkBehaviour
 
         movement=movement.normalized*velocity*Time.fixedDeltaTime;
 
-        if(IsHost == false){
-            transform.position +=movement;
-        }
+
+        SubmitPositionRequestClientsRpc(movement);
 
         SubmitPositionRequestServerRpc(movement);
+
+    }
+
+    [Rpc(SendTo.NotServer)]
+    void SubmitPositionRequestClientsRpc(Vector3 movement){
+
+            transform.position +=movement;
+
+    }
+
+    [Rpc(SendTo.Everyone)]
+    void RestorePositionRequestClientsRpc(Vector3 movement){
+            transform.position -= movement;
     }
 
     [Rpc(SendTo.Server)]
     void SubmitPositionRequestServerRpc(Vector3 movement){
+
         if((transform.position + movement).x>5 || (transform.position + movement).x<-5 || (transform.position + movement).z>5 || (transform.position + movement).z<-5 ){
-            transform.position -=movement;
+            RestorePositionRequestClientsRpc(movement);
         }
         else{
 
             transform.position +=movement;
         }
+
     }
 
     private void Jump(){
